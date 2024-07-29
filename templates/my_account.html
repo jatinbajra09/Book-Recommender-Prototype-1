@@ -1,0 +1,16 @@
+<!-- my_account.html -->
+{% extends 'base.html' %}
+
+{% block title %}My Account{% endblock %}
+
+{% block my_account_active %}active{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="text-white" style="font-size: 50px;">Welcome, {{ session['username'] }}</h1>
+        <h2 class="text-white">This is your account page.</h2>
+        <!-- Add other account-related information here -->
+    </div>
+</div>
+{% endblock %}

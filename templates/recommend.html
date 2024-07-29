@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Recommend Books{% endblock %}
+
+{% block recommend_active %}active{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="text-yellow" style="font-size: 50px;">Recommend Books</h1>
+        <form action="/recommend_books" method="post">
+            {{ form.hidden_tag() }}
+            <input name="user_input" type="text" class="form-control" placeholder="search books"><br>
+            <input type="submit" class="btn btn-lg btn-warning">
+        </form>
+    </div>
+
+    {% if data %}
+        {% for i in data %}
+            <div class="col-md-3" style="margin-top: 50px;">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top" src="{{ i[2] }}">
+                        <p class="text-white">{{ i[0] }}</p>
+                        <h4 class="text-white">{{ i[1] }}</h4>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}

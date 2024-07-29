@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Sanskrit';
+    src: url("./font/SamarkanNormal.ttf");
+  }
+  
+  body {
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light text color */
+    font-family: 'Arial', sans-serif; /* Default font */
+  }
+  
+  .navbar {
+    background-color: #1F1B24; /* Darker navbar */
+  }
+  
+  .container {
+    margin: 1% auto;
+  }
+  
+  .navbar-brand {
+    font-family: 'Sanskrit', 'Arial', sans-serif; /* Added fallback fonts */
+    color: #FFD700; /* Golden text for contrast */
+    font-size: 5rem;
+    cursor: pointer;
+  }
+  
+  .nav.navbar-nav > li > a {
+    color: #E0E0E0; /* Light text */
+    font-size: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav.navbar-nav > li:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    border-bottom: 2px solid #FFD700; /* Golden border on hover */
+  }
+  
+  .nav.navbar-nav > li.active > a {
+    border-bottom: 2px solid #FFD700; /* Golden border for active link */
+    border-radius: 5%;
+  }
+  
+  .nav-bar__toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .card {
+    background-color: #1E1E1E; /* Dark card background */
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px; /* Fixed height */
+    border: 2px solid #E0E0E0; /* Light border */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added smooth transition */
+  }
+  
+  .card:hover {
+    background-color: #333333; /* Slightly lighter on hover */
+    transform: scale(1.05); /* Added hover effect */
+  }
+  
+  .card-body {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-white {
+    color: #E0E0E0; /* Text color for elements with class 'text-white' */
+    font-size: 1.5rem;
+  }
+  
+  .card-body p {
+    text-align: center;
+    margin: 5px auto;
+    font-size: 2rem;
+  }
+  
+  .card-body h4 {
+    margin: 2px auto;
+  }
+  
+  .card-img-top {
+    height: 200px; /* Fixed height */
+    width: 150px; /* Fixed width */
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-footer {
+    background-color: #2D2D2D; /* Dark footer background */
+    border-top: 1px solid #444; /* Light border */
+    padding: 10px 15px;
+  }
+  
+  /* Additional styles for better aesthetics */
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .navbar-nav > li > a {
+    padding: 10px 15px;
+  }
+  
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li.active > a {
+    color: #121212; /* Dark text color on hover and active */
+    background-color: #FFD700; /* Golden background on hover and active */
+  }
+  
+  .card {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card-body h4, .card-body p {
+    margin: 10px 0;
+  }
+  
